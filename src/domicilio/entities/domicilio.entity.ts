@@ -1,25 +1,28 @@
 import { Entity, PrimaryColumn, Column } from 'typeorm';
 
 @Entity()
-export class Persona {
+export class Domicilio {
   @PrimaryColumn({ type: 'bigint' })
   id: number;
 
   @Column()
-  nombre: string;
+  calle: string;
 
   @Column()
-  apellidoPaterno: string;
+  numeroExterior: string;
 
   @Column()
-  apellidoMaterno: string;
+  numeroInterior: string;
 
   @Column()
-  fechaNacimiento: string;
+  colonia: string;
 
   @Column()
-  curp: string;
+  municipio: string;
 
   @Column()
-  sexo: string;
+  estado: string;
+
+  @Column()
+  codigoPostal: string;
 }
